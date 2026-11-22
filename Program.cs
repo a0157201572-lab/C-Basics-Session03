@@ -135,14 +135,26 @@
             string[] books =
             {
                 "Clean Code",
-                "The Proagmatic Programmer",
+                "The Pragmatic Programmer",
                 "Refactoring"
             };
             for
                 (int i = 0; i < books.Length; i++)
             {
-                Console.WriteLine((i + 1)+". " + books[i]);
-                
+                Console.WriteLine((i + 1) + ". " + books[i]);
+
+            }
+            #endregion
+
+            #region Question 13
+            // 13-Using the same books array, use a while loop to print every book title.
+
+            int y = 0;
+            while 
+                (y < books.Length)
+            {
+                Console.WriteLine(books[y]);
+                y++;
             }
             #endregion
 

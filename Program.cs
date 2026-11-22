@@ -132,18 +132,19 @@
             #region Question 12
             // 12-Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring");, use a for loop to print each book with its position number, like 1. Clean Code.
 
-            //string[] books =
-            //{
-            //    "Clean Code",
-            //    "The Pragmatic Programmer",
-            //    "Refactoring"
-            //};
-            //for
-            //    (int i = 0; i < books.Length; i++)
-            //{
-            //    Console.WriteLine((i + 1) + ". " + books[i]);
+            string[] books =
+            {
+                "Clean Code",
+                "The Pragmatic Programmer",
+                "Refactoring"
+            };
+            for
+                (int i = 0; i < books.Length; i++)
+            {
+                Console.WriteLine((i + 1) + ". " + books[i]);
 
-            //}
+
+            }
             #endregion
 
             #region Question 13    //12
@@ -179,6 +180,57 @@
             }
             #endregion
 
+            #region Question 16 //12
+
+            // 16- Using the same books array, loop through it and print each title, but stop completely (break) once you reach "Refactoring".
+
+            //foreach
+            //    (string book in books)
+            //{
+            //    Console.WriteLine(book);
+            //    if
+            //        (book == "Refactoring")
+
+            //        break;
+            //}
+
+            #endregion
+
+            #region Question 17 //12
+
+
+            // 17- Using the same books array, print every title except "The Pragmatic Programmer" (skip it with continue, don't stop the loop).
+
+            //foreach (string book in books)
+            //{
+            //    if
+            //        (book == "The Pragmatic Programmer")
+            //    {
+            //        continue;
+            //    }
+            //    Console.WriteLine(book);
+
+            //}
+
+
+
+
+
+            #endregion
+
+            #region Question 18 //12
+            // 18- Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty, use return to exit the method early instead of printing anything.
+
+            static void printFirstBook(string[] books)
+            {
+                if
+                    (books.Length ==0)
+                {
+                    return;
+                }
+                Console.WriteLine(books[0]);
+            }
+            #endregion
         }
     }
 }

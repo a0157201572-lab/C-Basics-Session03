@@ -150,7 +150,7 @@
             // 13-Using the same books array, use a while loop to print every book title.
 
             //int y = 0;
-            //while 
+            //while
             //    (y < books.Length)
             //{
             //    Console.WriteLine(books[y]);
@@ -160,14 +160,25 @@
 
             #region Question 14
             // 14- Write a do-while loop that prints "Checking book..." exactly 3 times.
-            int i = 0;
-            do
-            {
-                Console.WriteLine("Checking book ...");
-                i++;
-            }
-            while (i < 3);
+            //int i = 0;
+            //do
+            //{
+            //    Console.WriteLine("Checking book ...");
+            //    i++;
+            //}
+            //while (i < 3);
             #endregion
+
+            #region Question 15 //12
+            // 16- Using the same books array, use a foreach loop to print every book title.
+
+            foreach
+                (string book in books)
+            {
+                Console.WriteLine(book);
+            }
+            #endregion
+
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿namespace Assignment_3
 {
+    using System.Text;
     internal class Program
     {
         static void Main(string[] args)
@@ -23,7 +24,15 @@
             #endregion
 
             #region Question 3
-            // 3 
+            // 3 Create a StringBuilder, Append() the text "Book List", then Append()" - Updated" onto the same object. Print the final result.
+
+            
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Book List");
+            sb.Append(" -Updated");
+            Console.WriteLine(sb);
+            
+
             #endregion
 
 
